@@ -1,0 +1,32 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Walk-behind deck scaler illustration">
+  <defs>
+    <linearGradient id="ds-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a31"/><stop offset="1" stop-color="#17171b"/></linearGradient>
+    <linearGradient id="ds-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c6c79"/><stop offset="1" stop-color="#3a3a44"/></linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#ds-bg)"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- long handle -->
+    <path d="M300 70 L150 200" stroke="url(#ds-steel)" stroke-width="12"/>
+    <path d="M300 70 L150 200" stroke="#9a9aa6" stroke-width="1.5"/>
+    <!-- grip -->
+    <path d="M286 56 q30 -6 30 22" stroke="#cf2e2e" stroke-width="8"/>
+  </g>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- scaler head housing -->
+    <rect x="96" y="188" width="120" height="46" rx="10" fill="url(#ds-steel)" stroke="#9a9aa6" stroke-width="2"/>
+    <!-- multi cutter heads -->
+    <g fill="#cf2e2e" stroke="#7a1b18" stroke-width="1.5">
+      <circle cx="120" cy="236" r="12"/><circle cx="150" cy="240" r="12"/><circle cx="180" cy="236" r="12"/>
+    </g>
+    <g stroke="#cdd0d6" stroke-width="2">
+      <line x1="114" y1="236" x2="126" y2="236"/><line x1="120" y1="230" x2="120" y2="242"/>
+      <line x1="144" y1="240" x2="156" y2="240"/><line x1="150" y1="234" x2="150" y2="246"/>
+      <line x1="174" y1="236" x2="186" y2="236"/><line x1="180" y1="230" x2="180" y2="242"/>
+    </g>
+    <!-- air inlet -->
+    <rect x="200" y="170" width="16" height="22" rx="3" fill="#4a4a55" stroke="#9a9aa6" stroke-width="2"/>
+  </g>
+  <!-- deck line -->
+  <line x1="40" y1="258" x2="360" y2="258" stroke="#454550" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/>
+  <g opacity="0.5"><rect x="0" y="288" width="400" height="12" fill="#cf2e2e"/></g>
+</svg>

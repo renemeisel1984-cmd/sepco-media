@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pneumatic deck hammer illustration">
+  <defs>
+    <linearGradient id="dh-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a31"/><stop offset="1" stop-color="#17171b"/></linearGradient>
+    <linearGradient id="dh-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c6c79"/><stop offset="1" stop-color="#3a3a44"/></linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#dh-bg)"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- spade chisel -->
+    <path d="M150 196 L186 184 L196 210 L160 222 Z" fill="#cdd0d6" stroke="#9a9aa6" stroke-width="2"/>
+    <rect x="178" y="170" width="26" height="34" rx="4" fill="#4a4a55" stroke="#9a9aa6" stroke-width="2" transform="rotate(-18 191 187)"/>
+    <!-- heavy body -->
+    <rect x="172" y="96" width="60" height="92" rx="16" fill="url(#dh-steel)" stroke="#9a9aa6" stroke-width="2" transform="rotate(-18 202 142)"/>
+    <circle cx="206" cy="132" r="10" fill="#cf2e2e"/>
+    <!-- D-handle -->
+    <path d="M214 70 q44 -10 56 30 q8 30 -24 40" fill="none" stroke="url(#dh-steel)" stroke-width="14"/>
+    <path d="M214 70 q44 -10 56 30 q8 30 -24 40" fill="none" stroke="#9a9aa6" stroke-width="2"/>
+    <path d="M246 86 q-10 14 0 26" fill="none" stroke="#cf2e2e" stroke-width="6"/>
+    <!-- air hose -->
+    <path d="M268 116 q40 0 40 30 q0 26 -28 30" fill="none" stroke="#cf2e2e" stroke-width="6" opacity="0.9"/>
+  </g>
+  <g opacity="0.5"><rect x="0" y="288" width="400" height="12" fill="#cf2e2e"/></g>
+</svg>

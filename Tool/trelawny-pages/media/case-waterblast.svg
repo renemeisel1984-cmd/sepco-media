@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Surface preparation and waterblasting">
+  <defs>
+    <linearGradient id="cw-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a31"/><stop offset="1" stop-color="#17171b"/></linearGradient>
+    <linearGradient id="cw-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c6c79"/><stop offset="1" stop-color="#3a3a44"/></linearGradient>
+  </defs>
+  <rect width="400" height="220" fill="url(#cw-bg)"/>
+  <!-- wall being stripped -->
+  <rect x="40" y="40" width="150" height="150" rx="6" fill="#7a2b1f" opacity="0.5"/>
+  <rect x="40" y="40" width="80" height="150" rx="6" fill="#2f2f37"/>
+  <g stroke="#cdd0d6" stroke-width="2" opacity="0.4"><line x1="52" y1="70" x2="110" y2="70"/><line x1="52" y1="100" x2="110" y2="100"/><line x1="52" y1="130" x2="110" y2="130"/></g>
+  <!-- lance -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="240" y="96" width="120" height="14" rx="7" fill="url(#cw-steel)" stroke="#9a9aa6" stroke-width="2"/>
+    <rect x="328" y="86" width="34" height="34" rx="8" fill="#4a4a55" stroke="#9a9aa6" stroke-width="2"/>
+    <path d="M340 120 q-4 16 8 24" fill="none" stroke="#cf2e2e" stroke-width="6"/>
+    <!-- nozzle + spray -->
+    <circle cx="240" cy="103" r="6" fill="#cf2e2e"/>
+    <g stroke="#cf2e2e" stroke-width="3" opacity="0.8" stroke-linecap="round">
+      <line x1="232" y1="103" x2="150" y2="92"/><line x1="232" y1="103" x2="150" y2="103"/><line x1="232" y1="103" x2="150" y2="116"/>
+      <line x1="232" y1="103" x2="170" y2="82"/><line x1="232" y1="103" x2="170" y2="126"/>
+    </g>
+  </g>
+</svg>

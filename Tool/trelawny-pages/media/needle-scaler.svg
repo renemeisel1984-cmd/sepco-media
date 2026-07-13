@@ -1,0 +1,35 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pneumatic needle scaler illustration">
+  <defs>
+    <linearGradient id="ns-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a2a31"/><stop offset="1" stop-color="#17171b"/>
+    </linearGradient>
+    <linearGradient id="ns-steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6c6c79"/><stop offset="1" stop-color="#3a3a44"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#ns-bg)"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- needles -->
+    <g stroke="#cdd0d6" stroke-width="3">
+      <line x1="70" y1="150" x2="150" y2="150"/>
+      <line x1="70" y1="158" x2="150" y2="158"/>
+      <line x1="70" y1="142" x2="150" y2="142"/>
+      <line x1="70" y1="166" x2="150" y2="166"/>
+      <line x1="70" y1="134" x2="150" y2="134"/>
+    </g>
+    <!-- needle housing -->
+    <rect x="150" y="124" width="34" height="52" rx="6" fill="url(#ns-steel)" stroke="#9a9aa6" stroke-width="2"/>
+    <!-- main body -->
+    <rect x="184" y="120" width="120" height="60" rx="14" fill="url(#ns-steel)" stroke="#9a9aa6" stroke-width="2"/>
+    <circle cx="216" cy="150" r="8" fill="#cf2e2e"/>
+    <!-- pistol grip -->
+    <path d="M250 178 L268 250 Q270 258 278 258 L296 258 Q304 258 302 250 L290 178 Z" fill="url(#ns-steel)" stroke="#9a9aa6" stroke-width="2"/>
+    <!-- trigger -->
+    <path d="M258 186 Q244 196 252 212" fill="none" stroke="#cf2e2e" stroke-width="6"/>
+    <!-- air inlet + hose -->
+    <rect x="296" y="120" width="16" height="22" rx="3" fill="#4a4a55" stroke="#9a9aa6" stroke-width="2"/>
+    <path d="M312 131 q40 -6 40 24 q0 26 -28 30 q-22 4 -22 26" fill="none" stroke="#cf2e2e" stroke-width="6" opacity="0.9"/>
+  </g>
+  <!-- corner hazard accent -->
+  <g opacity="0.5"><rect x="0" y="288" width="400" height="12" fill="#cf2e2e"/></g>
+</svg>

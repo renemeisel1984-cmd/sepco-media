@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ports and shipyards">
+  <defs>
+    <linearGradient id="ap-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a31"/><stop offset="1" stop-color="#17171b"/></linearGradient>
+    <linearGradient id="ap-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a5a66"/><stop offset="1" stop-color="#3a3a44"/></linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#ap-bg)"/>
+  <line x1="0" y1="200" x2="400" y2="200" stroke="#454550" stroke-width="3"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- gantry crane -->
+    <g stroke="url(#ap-steel)" stroke-width="9" fill="none"><line x1="120" y1="70" x2="120" y2="200"/><line x1="300" y1="70" x2="300" y2="200"/></g>
+    <rect x="96" y="56" width="244" height="18" rx="4" fill="url(#ap-steel)" stroke="#9a9aa6" stroke-width="2"/>
+    <g stroke="#52525b" stroke-width="3"><line x1="120" y1="120" x2="300" y2="120"/><line x1="120" y1="74" x2="160" y2="120"/><line x1="300" y1="74" x2="260" y2="120"/></g>
+    <!-- trolley + cable -->
+    <rect x="196" y="74" width="34" height="14" rx="3" fill="#cf2e2e"/>
+    <line x1="213" y1="88" x2="213" y2="140" stroke="#9a9aa6" stroke-width="2"/>
+    <!-- container being lifted -->
+    <rect x="186" y="140" width="54" height="30" rx="3" fill="#cf2e2e" opacity="0.85" stroke="#7a1b18" stroke-width="1.5"/>
+    <!-- stacked containers -->
+    <g stroke="#9a9aa6" stroke-width="1.5"><rect x="40" y="170" width="46" height="30" fill="#6c6c79"/><rect x="40" y="140" width="46" height="28" fill="#cf2e2e" opacity="0.8"/><rect x="330" y="170" width="46" height="30" fill="#6c6c79"/></g>
+  </g>
+</svg>

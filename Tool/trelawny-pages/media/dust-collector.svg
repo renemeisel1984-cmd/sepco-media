@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Industrial dust collector illustration">
+  <defs>
+    <linearGradient id="dc-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a31"/><stop offset="1" stop-color="#17171b"/></linearGradient>
+    <linearGradient id="dc-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c6c79"/><stop offset="1" stop-color="#3a3a44"/></linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#dc-bg)"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- drum body -->
+    <rect x="150" y="110" width="110" height="130" rx="14" fill="url(#dc-steel)" stroke="#9a9aa6" stroke-width="2"/>
+    <!-- motor head -->
+    <rect x="158" y="86" width="94" height="34" rx="12" fill="#4a4a55" stroke="#9a9aa6" stroke-width="2"/>
+    <circle cx="205" cy="103" r="9" fill="#cf2e2e"/>
+    <!-- latches -->
+    <rect x="146" y="128" width="10" height="18" rx="2" fill="#cf2e2e"/>
+    <rect x="254" y="128" width="10" height="18" rx="2" fill="#cf2e2e"/>
+    <!-- body band -->
+    <line x1="150" y1="180" x2="260" y2="180" stroke="#2a2a31" stroke-width="4"/>
+    <!-- wheels -->
+    <circle cx="172" cy="248" r="14" fill="#2a2a31" stroke="#9a9aa6" stroke-width="3"/>
+    <circle cx="238" cy="248" r="14" fill="#2a2a31" stroke="#9a9aa6" stroke-width="3"/>
+    <!-- suction hose -->
+    <path d="M150 150 q-46 -2 -64 30 q-16 28 -42 30" fill="none" stroke="#cf2e2e" stroke-width="8" opacity="0.9"/>
+    <circle cx="44" cy="210" r="7" fill="#cf2e2e"/>
+  </g>
+  <g opacity="0.5"><rect x="0" y="288" width="400" height="12" fill="#cf2e2e"/></g>
+</svg>

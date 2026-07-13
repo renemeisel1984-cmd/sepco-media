@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marine and shipping">
+  <defs>
+    <linearGradient id="am-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a31"/><stop offset="1" stop-color="#17171b"/></linearGradient>
+    <linearGradient id="am-hull" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a5a66"/><stop offset="1" stop-color="#3a3a44"/></linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#am-bg)"/>
+  <!-- waterline -->
+  <path d="M0 178 q60 10 120 0 t120 0 t140 0 v62 H0 Z" fill="#cf2e2e" opacity="0.14"/>
+  <path d="M0 178 q60 10 120 0 t120 0 t140 0" fill="none" stroke="#cf2e2e" stroke-width="2" opacity="0.5"/>
+  <!-- cargo ship -->
+  <g stroke-linejoin="round">
+    <path d="M70 150 L330 150 L306 184 L94 184 Z" fill="url(#am-hull)" stroke="#9a9aa6" stroke-width="2"/>
+    <rect x="234" y="108" width="60" height="42" fill="#4a4a55" stroke="#9a9aa6" stroke-width="2"/>
+    <rect x="252" y="86" width="24" height="24" fill="#4a4a55" stroke="#9a9aa6" stroke-width="2"/>
+    <!-- containers -->
+    <g stroke="#9a9aa6" stroke-width="1.5">
+      <rect x="96" y="120" width="40" height="30" fill="#cf2e2e" opacity="0.8"/>
+      <rect x="140" y="120" width="40" height="30" fill="#6c6c79"/>
+      <rect x="184" y="120" width="40" height="30" fill="#cf2e2e" opacity="0.8"/>
+      <rect x="118" y="92" width="40" height="28" fill="#6c6c79"/>
+      <rect x="162" y="92" width="40" height="28" fill="#cf2e2e" opacity="0.8"/>
+    </g>
+    <circle cx="264" cy="98" r="3" fill="#f6b935"/>
+  </g>
+</svg>

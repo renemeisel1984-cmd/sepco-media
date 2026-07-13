@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Offshore oil and gas">
+  <defs>
+    <linearGradient id="ao-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a31"/><stop offset="1" stop-color="#17171b"/></linearGradient>
+    <linearGradient id="ao-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a5a66"/><stop offset="1" stop-color="#3a3a44"/></linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#ao-bg)"/>
+  <path d="M0 196 q80 8 160 0 t160 0 t80 0 v44 H0 Z" fill="#cf2e2e" opacity="0.12"/>
+  <path d="M0 196 q80 8 160 0 t160 0 t80 0" fill="none" stroke="#cf2e2e" stroke-width="2" opacity="0.45"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- legs -->
+    <g stroke="url(#ao-steel)" stroke-width="9" fill="none"><line x1="120" y1="120" x2="108" y2="210"/><line x1="280" y1="120" x2="292" y2="210"/><line x1="180" y1="120" x2="180" y2="210"/><line x1="240" y1="120" x2="240" y2="210"/></g>
+    <g stroke="#52525b" stroke-width="3"><line x1="112" y1="165" x2="288" y2="165"/><line x1="120" y1="120" x2="240" y2="210"/><line x1="280" y1="120" x2="180" y2="210"/></g>
+    <!-- deck -->
+    <rect x="96" y="96" width="208" height="28" rx="4" fill="url(#ao-steel)" stroke="#9a9aa6" stroke-width="2"/>
+    <!-- derrick -->
+    <path d="M150 96 L168 30 L196 30 L214 96 Z" fill="none" stroke="#9a9aa6" stroke-width="3"/>
+    <line x1="160" y1="68" x2="204" y2="68" stroke="#9a9aa6" stroke-width="2"/>
+    <!-- flare -->
+    <circle cx="262" cy="78" r="6" fill="#f6b935"/>
+    <path d="M262 72 q6 -10 0 -18" fill="none" stroke="#cf2e2e" stroke-width="3"/>
+  </g>
+</svg>
