@@ -1,0 +1,18 @@
+/* Trelawny side-nav rail, three zones (see sepco-deploy\tools\trelawny-rail.py).
+   Zone A (section nav) and Zone B (related) reuse .sd-plink from trelawny.css;
+   this file only adds the sub-level, the parent marker and Zone C. */
+.sd-side .sd-label-sub{padding-top:10px}
+.sd-side .sd-plink.sd-sub{padding:7px 12px 7px 22px;font-size:13px}
+.sd-side .sd-gap{height:6px;flex-shrink:0}
+.sd-side .sd-plink.sd-parent{color:#fff;font-weight:600}
+.sd-side .sd-plink.sd-rel{font-size:13px;padding:8px 12px}
+/* Zone C: on-page anchors, first in the rail, styled exactly like the range links (.sd-plink.sd-sub) */
+.sd-onpage{margin:0;flex-shrink:0}
+.sd-onpage>summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;border-radius:6px}
+.sd-onpage>summary::-webkit-details-marker{display:none}
+.sd-onpage>summary span{font-weight:700;letter-spacing:0;color:rgba(255,255,255,.3)}
+.sd-onpage>summary::after{content:'+';font-size:14px;font-weight:700;color:rgba(255,255,255,.45);padding-right:4px}
+.sd-onpage[open]>summary::after{content:'\2212'}
+.sd-onpage>summary:hover{background:rgba(255,255,255,.05)}
+.sd-onpage>summary:focus-visible{outline:2px solid var(--tr-red-light);outline-offset:2px}
+.sd-side .sd-onpage .tr-jn-link{font-size:13px;padding:7px 12px 7px 22px}
