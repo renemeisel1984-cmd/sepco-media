@@ -1,0 +1,164 @@
+/* LIGHTBOX:START */
+/* Product quick-view lightbox - Trelawny (Tools).
+   Byte-identical in both folders; append to the page's FIRST style block,
+   marker to marker.
+
+   The two categories ship the same palette under different prefixes
+   (--q-* on QYSEA, --ch-* on CHASING), so everything is read through one set
+   of local aliases with a nested fallback. One stylesheet, either category,
+   and it still tracks the page if a palette is ever re-tuned. */
+:root{
+  --lb-acc:var(--tr-red,#cf2e2e);
+  --lb-acc-lt:var(--tr-red-light,#e8463a);
+  --lb-acc-dk:var(--tr-red-dark,#9e1f1c);
+  --lb-navy:var(--tr-dark,#1b1b1f);
+  --lb-r:var(--r,8px);
+  --lb-rl:var(--r-lg,16px);
+  --lb-f:var(--font,'Inter',-apple-system,sans-serif);
+  --lb-ease:var(--transition,all .3s ease);
+}
+
+/* --- the trigger: a product photo the engine could wire --- */
+/* line-height:0 kills the inline baseline gap under the wrapped photo.
+   Deliberately no width/height/object-fit here: the card's own image rules
+   (.acc-thumb img, .nt-img img, the inline styles on a pack card) must keep
+   winning. */
+.lb-shot{position:relative;display:block;line-height:0;border-radius:var(--lb-r)}
+/* the whole photo is the button, so the hit area is the picture itself */
+.lb-btn{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:none;
+  cursor:zoom-in;display:flex;align-items:flex-end;justify-content:flex-end}
+.lb-btn::after{content:"⤢ Quick view";margin:10px;background:rgba(4,14,28,.82);color:#fff;
+  font-family:var(--lb-f);font-size:11px;font-weight:700;letter-spacing:.4px;padding:6px 11px;
+  border-radius:999px;opacity:0;transform:translateY(6px);transition:var(--lb-ease);
+  backdrop-filter:blur(3px);line-height:1.3}
+.lb-shot:hover .lb-btn::after,.lb-btn:focus-visible::after{opacity:1;transform:none}
+.lb-btn:focus-visible{outline:3px solid var(--lb-acc);outline-offset:2px;border-radius:var(--lb-r)}
+/* a hairline ring so the photo reads as interactive before hover, too */
+.lb-shot::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  box-shadow:inset 0 0 0 0 var(--lb-acc);transition:var(--lb-ease)}
+.lb-shot:hover::after{box-shadow:inset 0 0 0 2px var(--lb-acc)}
+/* a box the page already owns (.acc-thumb, .nt-img) is promoted rather than
+   wrapped - it keeps its own size, so the ring follows its radius, not ours */
+.lb-shot.lb-own{line-height:inherit;border-radius:inherit}
+
+/* --- the optional curated registry: data source AND the no-JS fallback --- */
+.lb-data{display:none}
+
+/* --- the dialog --- */
+.lb-back{position:fixed;inset:0;z-index:9000;background:rgba(4,14,28,.78);backdrop-filter:blur(4px);
+  display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;transition:opacity .2s ease}
+/* display:flex beats the browser's own [hidden]{display:none}, and a
+   full-screen invisible layer swallows every click on the page underneath */
+.lb-back[hidden]{display:none}
+.lb-back.on{opacity:1}
+.lb-modal{position:relative;background:#fff;border-radius:var(--lb-rl);width:min(1000px,100%);
+  max-height:calc(100vh - 48px);overflow:auto;display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+  box-shadow:0 30px 80px rgba(0,0,0,.45);transform:translateY(14px) scale(.985);transition:transform .22s ease}
+.lb-back.on .lb-modal{transform:none}
+.lb-close{position:absolute;top:14px;right:14px;z-index:2;width:38px;height:38px;border-radius:50%;
+  border:0;background:rgba(4,14,28,.72);color:#fff;font-size:20px;line-height:1;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:var(--lb-ease);padding:0}
+.lb-close:hover{background:var(--lb-navy)}
+.lb-close:focus-visible{outline:3px solid #fff;outline-offset:2px}
+
+/* photo side */
+.lb-media{position:relative;background:#f0faff;padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.lb-big{flex:1;display:flex;align-items:center;justify-content:center;min-height:0}
+.lb-big img{max-width:100%;max-height:460px;height:auto;object-fit:contain;border-radius:var(--lb-r);background:#fff}
+.lb-thumbs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.lb-thumb{width:56px;height:56px;padding:0;border:2px solid transparent;border-radius:8px;overflow:hidden;
+  background:#fff;cursor:pointer;transition:var(--lb-ease)}
+.lb-thumb img{width:100%;height:100%;object-fit:contain}
+.lb-thumb[aria-current="true"]{border-color:var(--lb-acc)}
+.lb-thumb:focus-visible{outline:2px solid var(--lb-navy);outline-offset:2px}
+
+/* info side */
+.lb-info{background:var(--lb-navy);color:#fff;padding:30px;display:flex;flex-direction:column;min-width:0}
+.lb-role{font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;
+  color:var(--lb-acc-lt);margin:0}
+/* Squarespace injects h1-h6{navy} live, which beats an inherited white */
+.lb-info h3{font-size:clamp(20px,2.4vw,25px);font-weight:800;color:#fff!important;line-height:1.25;margin:8px 0 10px}
+.lb-desc{font-size:15px;color:rgba(255,255,255,.78);line-height:1.65;margin:0 0 16px}
+.lb-specs{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 16px;padding:0}
+.lb-specs li{background:rgba(255,255,255,.07);border-radius:8px;padding:9px 11px}
+.lb-specs b{display:block;font-size:16px;font-weight:800;color:#fff;line-height:1.2;font-variant-numeric:tabular-nums}
+.lb-specs span{font-size:10px;letter-spacing:.7px;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:600}
+.lb-tip{display:flex;gap:10px;background:rgba(72,202,228,.14);border-left:3px solid var(--lb-acc-lt);
+  border-radius:0 8px 8px 0;padding:11px 13px;margin:0 0 18px;font-size:13.5px;line-height:1.6;color:rgba(255,255,255,.86)}
+.lb-tip b{color:var(--lb-acc-lt);font-weight:800;flex-shrink:0}
+
+/* "in the box" list, cloned from a package card's own .checks */
+.lb-list{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:6px}
+.lb-list li{position:relative;padding-left:22px;font-size:13.5px;line-height:1.55;color:rgba(255,255,255,.82)}
+.lb-list li::before{content:"✓";position:absolute;left:0;top:0;color:var(--lb-acc-lt);font-weight:800}
+
+/* compatibility chips, cloned from the card. They are authored for a white
+   card, so restate the colours here rather than touching the card's rules. */
+.lb-compat{margin:0 0 18px}
+.lb-compat-lab{display:block;font-size:10px;font-weight:700;letter-spacing:.9px;text-transform:uppercase;
+  color:rgba(255,255,255,.5);margin-bottom:7px}
+.lb-chips{display:flex;flex-wrap:wrap;gap:6px}
+.lb-chips>*{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:4px;white-space:nowrap;
+  background:rgba(255,255,255,.1)!important;border:1px solid rgba(255,255,255,.24)!important;color:#fff!important}
+.lb-chips>.x{background:rgba(245,158,11,.18)!important;border-color:rgba(245,158,11,.42)!important;color:#fcd34d!important}
+.lb-chips>.c{background:rgba(255,255,255,.06)!important;border-color:rgba(255,255,255,.16)!important;color:rgba(255,255,255,.6)!important}
+
+.lb-fit{font-size:12px;font-weight:700;display:inline-flex;align-self:flex-start;align-items:center;gap:6px;
+  padding:5px 11px;border-radius:999px;margin:0 0 14px}
+.lb-fit.in{background:rgba(16,185,129,.2);color:#6ee7b7}
+.lb-fit.pick{background:rgba(72,202,228,.2);color:var(--lb-acc-lt)}
+.lb-fit.out{background:rgba(245,158,11,.2);color:#fcd34d}
+.lb-foot{margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,.14)}
+.lb-sku{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:12px}
+.lb-sku-t{flex:1 1 140px;min-width:0}
+.lb-sku-t b{display:block;font-size:13px;font-weight:700;color:#fff;line-height:1.35}
+.lb-sku-t span{font-size:11px;color:rgba(255,255,255,.5);font-variant-numeric:tabular-nums}
+.lb-sku-p{font-size:21px;font-weight:800;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
+.lb-add{width:100%;background:var(--lb-acc);color:#fff;border:none;border-radius:var(--lb-r);
+  font-family:var(--lb-f);font-size:14px;font-weight:700;padding:12px 18px;cursor:pointer;
+  transition:var(--lb-ease);text-transform:none!important;letter-spacing:normal!important;line-height:1.3}
+.lb-add:hover{background:var(--lb-acc-dk)}
+/* still a live button - it adds a second unit - so it keeps the pointer */
+.lb-add.done{background:rgba(16,185,129,.18);color:#6ee7b7}
+.lb-add:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.lb-more{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;color:var(--lb-acc-lt)}
+.lb-more:hover{color:#fff;text-decoration:underline}
+body.lb-open{overflow:hidden}
+
+/* --- auto mode, Blue Robotics shape: the card's own picker, price and button
+       borrowed onto the navy panel. Carried here so this stylesheet stays a
+       superset of the Blue Robotics one and the two can be merged later. --- */
+.lb-borrowed .brv-pick{margin:0 0 12px}
+.lb-borrowed .brv-lab{color:rgba(255,255,255,.6)!important}
+.lb-borrowed .prod-price{font-size:21px;font-weight:800;color:#fff;margin:0 0 8px;font-variant-numeric:tabular-nums}
+.lb-borrowed .brv-sku{margin:0 0 14px;color:rgba(255,255,255,.55)}
+.lb-borrowed .brv-sku b,.lb-borrowed .brv-sku span{color:#fff!important}
+.lb-borrowed .prod-enquire{width:100%;justify-content:center;font-size:14px;padding:12px 18px;border-radius:var(--lb-r)}
+.lb-borrowed .prod-enquire:focus-visible{outline:3px solid #fff;outline-offset:2px}
+
+@media (max-width:860px){
+  .lb-back{padding:0}
+  .lb-modal{grid-template-columns:1fr;border-radius:0;max-height:100vh;height:100%}
+  .lb-media{padding:20px}
+  .lb-big img{max-height:38vh}
+  .lb-info{padding:24px 20px 28px}
+  .lb-btn::after{opacity:1;transform:none}   /* no hover on touch */
+}
+@media (max-width:420px){.lb-specs{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){
+  .lb-back,.lb-modal,.lb-btn::after,.lb-shot::after{transition:none}
+}
+
+/* --- Trelawny: .ns-thumb is a fixed 118px box the card already owns --- */
+.ns-thumb.lb-shot{cursor:zoom-in}
+.ns-thumb.lb-shot::after{border-radius:8px}
+/* the card's own quote button inside the dialog keeps the Trelawny red */
+.lb-add{background:var(--lb-acc);color:#fff}
+.lb-add.done{background:var(--tr-steel,#34343d)}
+/* the model dropdown cloned into the dialog */
+.lb-pick{display:block;width:100%;margin:0 0 10px;padding:10px 12px;font-size:14px;
+  font-weight:600;color:#1c1c22;border:1px solid #d6d6dc;border-radius:8px;background:#fff}
+.lb-meta{font-size:13px;color:#d8d8de;margin:0 0 4px}
+.lb-meta b{font-family:'SFMono-Regular',Consolas,monospace;color:#fff}
+/* LIGHTBOX:END */
