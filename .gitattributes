@@ -1,0 +1,2 @@
+# Shared CSS/JS are content-hashed by build-tools.ps1: the served bytes must be the hashed bytes.
+Tool/_assets/** -text
