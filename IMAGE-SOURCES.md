@@ -19,6 +19,9 @@ All replacements are from Unsplash under the [Unsplash License](https://unsplash
 | `Defense/seacoat-pages/images/patrol-open-sea.webp (derived from the jpg, quality 80)` | https://unsplash.com/photos/IgFeXmfoi4A | Royce Fonseca | Unsplash License | 2026-11-13 |
 | `Defense/beex-pages/images/beex-coastguard.jpg` | https://unsplash.com/photos/493xjdmZou8 | Royce Fonseca | Unsplash License | 2026-11-13 |
 | `Defense/beex-pages/images/beex-coastguard.webp (derived from the jpg, quality 80)` | https://unsplash.com/photos/493xjdmZou8 | Royce Fonseca | Unsplash License | 2026-11-13 |
+| `Tool/graco-pages/media/photos/scene-ship.jpg` | https://unsplash.com/photos/Gtr_O7xa6tY | Antonio Janeski | Unsplash License | 2026-11-13 |
+| `Tool/graco-pages/media/photos/scene-ship.webp (derived from the jpg, quality 80)` | https://unsplash.com/photos/Gtr_O7xa6tY | Antonio Janeski | Unsplash License | 2026-11-13 |
+| `VesselPerformance/media/photos/ardmore-tanker.jpg` | https://unsplash.com/photos/U9_pRASawlc | Fredrick F. | Unsplash License | 2026-11-13 |
 
 ## Confirmed free / public domain / supplier-provided (not replaced)
 
