@@ -79,7 +79,6 @@ All replacements are from Unsplash under the [Unsplash License](https://unsplash
 | `VesselPerformance/media/vesselity/ferry-at-sea.jpg` | Free licence | Pexels (Pexels License), https://www.pexels.com/photo/13650588/ |
 | `VesselPerformance/media/vesselity/fleet-aerial-harbor.jpg` | Free licence | Pexels (Pexels License), https://www.pexels.com/photo/1554646/ |
 | `VesselPerformance/media/wake-poster.jpg` | Free licence | Pexels (Pexels License) |
-| `industries/media/ph-ind-offshore-platform.jpg` | Free licence | Pexels (Pexels License), https://www.pexels.com/photo/3192662/ |
 | `Defense/blueye-pages/images/force-hull.jpg` | Supplier-provided | Supplied by Blueye |
 | `Defense/blueye-pages/images/force-hull.webp` | Supplier-provided | Supplied by Blueye |
 | `Defense/blueye-pages/images/mcm-naval.jpg` | Supplier-provided | Supplied by Blueye |
