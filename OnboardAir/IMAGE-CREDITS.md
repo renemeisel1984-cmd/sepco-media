@@ -18,6 +18,7 @@ Pexels pages show the licence as "Free" and link to https://www.pexels.com/licen
 | File | Used on | Owner / source | Terms | Note |
 |---|---|---|---|---|
 | hero-mac500-coldstore-animation | MAC500 series (hero) | JIMCO A/S, cold-store film "Cooler v1" (JIMCO distributor material) | (c) JIMCO A/S; used by SepcoTech as JIMCO's distributor. | **Animation frame, not a photograph.** Cropped to remove the JIMCO logo. Captioned and alt-texted as JIMCO animation. |
+| supplier-coldstore-animation-14 | Category page (Supplier section) | JIMCO A/S, cold-store film "Cooler v1" (JIMCO distributor material) | (c) JIMCO A/S; used by SepcoTech as JIMCO's distributor. | **Animation frame, not a photograph.** Cropped to remove the JIMCO logo. Tagged and alt-texted as JIMCO animation. |
 | case-sinbadtech-oz1000 | OZ series (SINBADTECH case) | JIMCO / customer slide, OZ1000 in a SINBADTECH chiller, Thailand | JIMCO and customer material, shown as the SINBADTECH case | Cropped to the unit and the fruit; the slide text and the AS Friis logo are cropped out. |
 
 ## Video (media/video/)
