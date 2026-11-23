@@ -142,3 +142,6 @@ Photos with no source on record were replaced by Pexels photos under the [Pexels
 | `VesselPerformance/media/photos/cruise-liner.jpg` | https://www.pexels.com/photo/luxurious-cruise-ship-sailing-in-the-caribbean-sea-38059196/ | Sergii | Pexels License | 2026-11-23 |
 | `VesselPerformance/media/vesselity/barnacles-macro.jpg` | https://www.pexels.com/photo/mussels-attached-to-a-rock-8568534/ | David J. Boozer | Pexels License | 2026-11-23 |
 | `VesselPerformance/media/vesselity/cargo-clean-sea.jpg` | https://www.pexels.com/photo/view-of-a-loaded-cargo-ship-19549941/ | Ray McKay | Pexels License | 2026-11-23 |
+| `Defense/coltraco-pages/images/naval-destroyer.jpg` (+ .webp twin) | https://www.pexels.com/photo/35173620/ | Enzo Renz | Pexels License | 2026-11-23 |
+| `FireSafety/images/ferry-deck.jpg` | https://www.pexels.com/photo/ferry-sailing-in-the-sea-of-japan-near-vladivostok-40905938/ | Lajos Kristóf Kántor | Pexels License | 2026-11-23 |
+| `Tool/hertzinno-pages/media/photos/ind-cargo-ship.jpg` (+ .webp twin) | https://unsplash.com/photos/red-and-white-ship-on-sea-under-cloudy-sky-during-daytime-U9_pRASawlc | Fredrick F. (@blackspeaker93) | Unsplash License | 2026-11-23 |
