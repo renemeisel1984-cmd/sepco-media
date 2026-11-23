@@ -113,3 +113,32 @@ All replacements are from Unsplash under the [Unsplash License](https://unsplash
 | `industries/media/ph-bridge-2.jpg` | Supplier-provided | Supplied by none |
 | `industries/media/ph-engine-room.jpg` | Supplier-provided | Supplied by Hertzinno |
 | `industries/media/ph-force-hull.jpg` | Supplier-provided | Supplied by Blueye |
+
+## Replaced unknown-source photos (23 Nov 2026)
+
+Photos with no source on record were replaced by Pexels photos under the [Pexels License](https://www.pexels.com/license/) (free for commercial use, no attribution required). `waste-bins` is a crop of the original that removes a lifebuoy carrying a ship name. Originals are kept in `sepco-deploy\_audit\image-rightseplacements\originals\`.
+
+| File | Source | Photographer | Licence | Replaced |
+|---|---|---|---|---|
+| `Defense/beex-pages/images/beex-naval-ship.jpg` (+ .webp twin) | https://www.pexels.com/photo/13342949/ | Germannavyphotograph | Pexels License | 2026-11-23 |
+| `Defense/rtsys-pages/images/eod-divers.jpg` (+ .webp twin) | https://www.pexels.com/photo/35175952/ | Mido Makasardi | Pexels License | 2026-11-23 |
+| `Defense/tethys-pages/images/eod-divers.jpg` (+ .webp twin) | https://www.pexels.com/photo/35175952/ | Mido Makasardi | Pexels License | 2026-11-23 |
+| `OnboardAir/media/hero/article-fruit-provision-crates.jpg` (+ .webp twin) | https://www.pexels.com/photo/40665800/ | Mir Rajjak | Pexels License | 2026-11-23 |
+| `OnboardAir/media/hero/hero-category-container-ship.jpg` (+ .webp twin) | https://www.pexels.com/photo/12530455/ | Kelly | Pexels License | 2026-11-23 |
+| `OnboardAir/media/hero/hero-fruit-ship-galley.jpg` (+ .webp twin) | https://www.pexels.com/photo/28704740/ | Bruno Makori | Pexels License | 2026-11-23 |
+| `OnboardAir/media/hero/hero-hub-tanker-aerial.jpg` (+ .webp twin) | https://www.pexels.com/photo/1036866/ | Alexander Bobrov | Pexels License | 2026-11-23 |
+| `OnboardAir/media/hero/hero-oz-cabin-porthole.jpg` (+ .webp twin) | https://www.pexels.com/photo/18505767/ | Trinity Raines | Pexels License | 2026-11-23 |
+| `OnboardAir/media/hero/hero-ozone-waste-bins.jpg` (+ .webp twin) | https://www.pexels.com/photo/colorful-waste-bins-and-lifebuoy-on-a-ship-s-deck-37978699/ | Павел Хлыстунов | Pexels License | 2026-11-23 |
+| `Tool/hertzinno-pages/media/photos/ind-machinery.jpg` (+ .webp twin) | https://www.pexels.com/photo/blue-industrial-machine-under-building-pipes-10290629/ | Jonathan Cooper | Pexels License | 2026-11-23 |
+| `Tool/hertzinno-pages/media/photos/ind-pipes-dark.jpg` (+ .webp twin) | https://www.pexels.com/photo/industrial-metal-pipes-13100561/ | Yuri Shkoda | Pexels License | 2026-11-23 |
+| `Tool/hertzinno-pages/media/photos/ind-pipes-valves.jpg` (+ .webp twin) | https://www.pexels.com/photo/old-abandoned-factory-somewhere-in-belgium-17728787/ | Sonny Vermeer | Pexels License | 2026-11-23 |
+| `Tool/hertzinno-pages/media/photos/ind-refinery.jpg` (+ .webp twin) | https://www.pexels.com/photo/oil-refinery-plant-15970032/ | Jakub Pabis | Pexels License | 2026-11-23 |
+| `Tool/hertzinno-pages/media/photos/lng-carrier.jpg` (+ .webp twin) | https://www.pexels.com/photo/industrial-gas-storage-facility-by-waterside-38601485/ | Nothing Ahead | Pexels License | 2026-11-23 |
+| `Tool/hertzinno-pages/media/photos/lng-tanks.jpg` (+ .webp twin) | https://www.pexels.com/photo/lng-carrier-ship-at-sea-on-clear-day-35757999/ | Oleksiy | Pexels License | 2026-11-23 |
+| `VesselPerformance/media/abb/container-ship-clear.jpg` | https://www.pexels.com/photo/boat-in-body-of-water-262353/ | Pixabay | Pexels License | 2026-11-23 |
+| `VesselPerformance/media/abb/containership-hero.jpg` | https://www.pexels.com/photo/colorful-cargo-containers-on-ship-near-pier-6572431/ | Kelly | Pexels License | 2026-11-23 |
+| `VesselPerformance/media/abb/ship-bridge.jpg` | https://www.pexels.com/photo/modern-ship-bridge-overlooking-the-ocean-35342838/ | Matthew Jesús | Pexels License | 2026-11-23 |
+| `VesselPerformance/media/abb/storm-at-sea.jpg` | https://www.pexels.com/photo/stormy-ocean-view-from-ship-deck-30412424/ | Francesco Ungaro | Pexels License | 2026-11-23 |
+| `VesselPerformance/media/photos/cruise-liner.jpg` | https://www.pexels.com/photo/luxurious-cruise-ship-sailing-in-the-caribbean-sea-38059196/ | Sergii | Pexels License | 2026-11-23 |
+| `VesselPerformance/media/vesselity/barnacles-macro.jpg` | https://www.pexels.com/photo/mussels-attached-to-a-rock-8568534/ | David J. Boozer | Pexels License | 2026-11-23 |
+| `VesselPerformance/media/vesselity/cargo-clean-sea.jpg` | https://www.pexels.com/photo/view-of-a-loaded-cargo-ship-19549941/ | Ray McKay | Pexels License | 2026-11-23 |
