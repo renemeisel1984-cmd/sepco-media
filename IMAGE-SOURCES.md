@@ -146,3 +146,7 @@ Photos with no source on record were replaced by Pexels photos under the [Pexels
 | `FireSafety/images/ferry-deck.jpg` | https://www.pexels.com/photo/ferry-sailing-in-the-sea-of-japan-near-vladivostok-40905938/ | Lajos Kristóf Kántor | Pexels License | 2026-11-23 |
 | `Tool/hertzinno-pages/media/photos/ind-cargo-ship.jpg` (+ .webp twin) | https://unsplash.com/photos/red-and-white-ship-on-sea-under-cloudy-sky-during-daytime-U9_pRASawlc | Fredrick F. (@blackspeaker93) | Unsplash License | 2026-11-23 |
 | `Tool/hertzinno-pages/media/photos/ind-lng-carrier-red.jpg` (+ .webp twin) | https://www.pexels.com/photo/cargo-ships-on-sea-16691791/ | Ekaterina Dotsenko | Pexels License | 2026-11-23 |
+
+## Removed (23 Nov 2026)
+
+These 11 files (9 photos) had no source or licence on record and were removed from the pages and the repo: coastguard-kv, gallery-01, gallery-12, ship-utm, route-atlantic, route-europe, weather-map, seaspeed-drydock, roskilde-head-office-wide. The six social cards that used them were regenerated with Pexels photos.
